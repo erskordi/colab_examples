@@ -45,7 +45,7 @@ d) 1 2 3 4 5
 
 ```python
 x = 10
-if x < 5:
+if x < 5 or x % 2 == 0:
     print("A")
 elif x < 15:
     print("B")
@@ -91,8 +91,8 @@ d) 5
 ```python
 for i in range(1, 6):
     if i % 2 == 0:
-        print(i)
         break
+    print(i)
 ```
 a) 2
 
@@ -103,11 +103,14 @@ c) 1 3 5
 d) Error
 
 ```python
-x = 10
+x = 2
 if x > 5:
     print("Hello")
 else:
-    print("World")
+    if x % 3 != 0:
+        print("World")
+    else:
+        print("Hello World")
 ```
 a) Hello
 
@@ -135,8 +138,6 @@ x = 5
 while x > 0:
     print(x)
     x -= 2
-else:
-    print("Done")
 ```
 a) 5 3 1
 
